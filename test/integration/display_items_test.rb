@@ -4,6 +4,7 @@ class DisplaysItemsTest < ActionDispatch::IntegrationTest
 
   def setup
     Capybara.app = Storedom::Application
+    reset_session!
   end
 
   def test_it_reaches_the_root_page
