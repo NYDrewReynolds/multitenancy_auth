@@ -1,4 +1,4 @@
-class Permission < ActiveRecord::Base
+class Permission
   def initialize(user)
     @user = user
   end
